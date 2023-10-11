@@ -10,8 +10,4 @@
 9        android:targetSdkVersion="28" />
 9-->D:\githubdownload\android-play\jiaozivideoplayer\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->D:\githubdownload\android-play\jiaozivideoplayer\src\main\AndroidManifest.xml:4:5-79
-11-->D:\githubdownload\android-play\jiaozivideoplayer\src\main\AndroidManifest.xml:4:22-76
-12
-13</manifest>
+11</manifest>

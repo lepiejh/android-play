@@ -10,6 +10,8 @@ int anim abc_slide_out_bottom 0x0
 int anim abc_slide_out_top 0x0
 int anim abc_tooltip_enter 0x0
 int anim abc_tooltip_exit 0x0
+int anim pop_from_bottom_anim_in 0x0
+int anim pop_from_bottom_anim_out 0x0
 int attr actionBarDivider 0x0
 int attr actionBarItemBackground 0x0
 int attr actionBarPopupTheme 0x0
@@ -133,6 +135,7 @@ int attr fontProviderFetchStrategy 0x0
 int attr fontProviderFetchTimeout 0x0
 int attr fontProviderPackage 0x0
 int attr fontProviderQuery 0x0
+int attr fontProviderSystemFontFamily 0x0
 int attr fontStyle 0x0
 int attr fontVariationSettings 0x0
 int attr fontWeight 0x0
@@ -311,6 +314,8 @@ int color abc_tint_spinner 0x0
 int color abc_tint_switch_track 0x0
 int color accent_material_dark 0x0
 int color accent_material_light 0x0
+int color androidx_core_ripple_material_light 0x0
+int color androidx_core_secondary_text_default_material_light 0x0
 int color background_floating_material_dark 0x0
 int color background_floating_material_light 0x0
 int color background_material_dark 0x0
@@ -583,8 +588,8 @@ int drawable jz_battery_level_70 0x0
 int drawable jz_battery_level_90 0x0
 int drawable jz_bottom_bg 0x0
 int drawable jz_bottom_progress 0x0
+int drawable jz_bottom_seek_poster 0x0
 int drawable jz_bottom_seek_progress 0x0
-int drawable jz_bottom_seek_thumb 0x0
 int drawable jz_brightness_video 0x0
 int drawable jz_clarity_popwindow_bg 0x0
 int drawable jz_click_back_selector 0x0
@@ -606,8 +611,9 @@ int drawable jz_play_normal 0x0
 int drawable jz_play_pressed 0x0
 int drawable jz_restart_normal 0x0
 int drawable jz_restart_pressed 0x0
-int drawable jz_seek_thumb_normal 0x0
-int drawable jz_seek_thumb_pressed 0x0
+int drawable jz_retry 0x0
+int drawable jz_seek_poster_normal 0x0
+int drawable jz_seek_poster_pressed 0x0
 int drawable jz_share_normal 0x0
 int drawable jz_share_pressed 0x0
 int drawable jz_shrink 0x0
@@ -626,9 +632,41 @@ int drawable notification_template_icon_bg 0x0
 int drawable notification_template_icon_low_bg 0x0
 int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
-int drawable retry_bg 0x0
 int drawable tooltip_frame_dark 0x0
 int drawable tooltip_frame_light 0x0
+int id accessibility_action_clickable_span 0x0
+int id accessibility_custom_action_0 0x0
+int id accessibility_custom_action_1 0x0
+int id accessibility_custom_action_10 0x0
+int id accessibility_custom_action_11 0x0
+int id accessibility_custom_action_12 0x0
+int id accessibility_custom_action_13 0x0
+int id accessibility_custom_action_14 0x0
+int id accessibility_custom_action_15 0x0
+int id accessibility_custom_action_16 0x0
+int id accessibility_custom_action_17 0x0
+int id accessibility_custom_action_18 0x0
+int id accessibility_custom_action_19 0x0
+int id accessibility_custom_action_2 0x0
+int id accessibility_custom_action_20 0x0
+int id accessibility_custom_action_21 0x0
+int id accessibility_custom_action_22 0x0
+int id accessibility_custom_action_23 0x0
+int id accessibility_custom_action_24 0x0
+int id accessibility_custom_action_25 0x0
+int id accessibility_custom_action_26 0x0
+int id accessibility_custom_action_27 0x0
+int id accessibility_custom_action_28 0x0
+int id accessibility_custom_action_29 0x0
+int id accessibility_custom_action_3 0x0
+int id accessibility_custom_action_30 0x0
+int id accessibility_custom_action_31 0x0
+int id accessibility_custom_action_4 0x0
+int id accessibility_custom_action_5 0x0
+int id accessibility_custom_action_6 0x0
+int id accessibility_custom_action_7 0x0
+int id accessibility_custom_action_8 0x0
+int id accessibility_custom_action_9 0x0
 int id action_bar 0x0
 int id action_bar_activity_content 0x0
 int id action_bar_container 0x0
@@ -671,6 +709,7 @@ int id custom 0x0
 int id customPanel 0x0
 int id decor_content_parent 0x0
 int id default_activity_button 0x0
+int id dialog_button 0x0
 int id duration_image_tip 0x0
 int id duration_progressbar 0x0
 int id edit_query 0x0
@@ -702,6 +741,7 @@ int id notification_background 0x0
 int id notification_main_column 0x0
 int id notification_main_column_container 0x0
 int id parentPanel 0x0
+int id poster 0x0
 int id progress_circular 0x0
 int id progress_horizontal 0x0
 int id radio 0x0
@@ -738,14 +778,23 @@ int id submenuarrow 0x0
 int id submit_area 0x0
 int id surface_container 0x0
 int id tabMode 0x0
+int id tag_accessibility_actions 0x0
+int id tag_accessibility_clickable_spans 0x0
+int id tag_accessibility_heading 0x0
+int id tag_accessibility_pane_title 0x0
+int id tag_on_apply_window_listener 0x0
+int id tag_on_receive_content_listener 0x0
+int id tag_on_receive_content_mime_types 0x0
+int id tag_screen_reader_focusable 0x0
+int id tag_state_description 0x0
 int id tag_transition_group 0x0
 int id tag_unhandled_key_event_manager 0x0
 int id tag_unhandled_key_listeners 0x0
+int id tag_window_insets_animation_callback 0x0
 int id text 0x0
 int id text2 0x0
 int id textSpacerNoButtons 0x0
 int id textSpacerNoTitle 0x0
-int id thumb 0x0
 int id time 0x0
 int id title 0x0
 int id titleDividerNoCustom 0x0
@@ -798,6 +847,7 @@ int layout abc_search_dropdown_item_icons_2line 0x0
 int layout abc_search_view 0x0
 int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
+int layout custom_dialog 0x0
 int layout jz_dialog_brightness 0x0
 int layout jz_dialog_progress 0x0
 int layout jz_dialog_volume 0x0
@@ -1210,6 +1260,7 @@ int style Widget_Compat_NotificationActionText 0x0
 int style Widget_Support_CoordinatorLayout 0x0
 int style jz_popup_toast_anim 0x0
 int style jz_style_dialog_progress 0x0
+int style pop_animation 0x0
 int[] styleable ActionBar { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1
@@ -1461,13 +1512,14 @@ int styleable DrawerArrowToggle_drawableSize 4
 int styleable DrawerArrowToggle_gapBetweenBars 5
 int styleable DrawerArrowToggle_spinBars 6
 int styleable DrawerArrowToggle_thickness 7
-int[] styleable FontFamily { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
+int[] styleable FontFamily { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable FontFamily_fontProviderAuthority 0
 int styleable FontFamily_fontProviderCerts 1
 int styleable FontFamily_fontProviderFetchStrategy 2
 int styleable FontFamily_fontProviderFetchTimeout 3
 int styleable FontFamily_fontProviderPackage 4
 int styleable FontFamily_fontProviderQuery 5
+int styleable FontFamily_fontProviderSystemFontFamily 6
 int[] styleable FontFamilyFont { 0x1010532, 0x101053f, 0x1010570, 0x1010533, 0x101056f, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable FontFamilyFont_android_font 0
 int styleable FontFamilyFont_android_fontStyle 1
