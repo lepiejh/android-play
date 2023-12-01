@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="color_01">#32B48B</color>
+    <color name="color_02">#32B48B</color>
     <dimen name="jz_start_button_w_h_fullscreen">62dp</dimen>
     <dimen name="jz_start_button_w_h_normal">45dp</dimen>
     <item name="back" type="id"/>

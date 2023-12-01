@@ -25,6 +25,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ved.framework.utils.UIUtils;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
@@ -107,6 +109,8 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
 
     public ImageView startButton;
     public SeekBar progressBar;
+    public RelativeLayout rootView;
+    public ImageView posterImageView;
     public ImageView fullscreenButton;
     public TextView currentTimeTextView, totalTimeTextView;
     public ViewGroup textureViewContainer;
@@ -266,6 +270,8 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
         View.inflate(context, getLayoutId(), this);
         jzvdContext = context;
         startButton = findViewById(R.id.start);
+        rootView = findViewById(R.id.rl_jz);
+        posterImageView = findViewById(R.id.poster);
         fullscreenButton = findViewById(R.id.fullscreen);
         progressBar = findViewById(R.id.bottom_seek_progress);
         currentTimeTextView = findViewById(R.id.current);
@@ -1019,10 +1025,14 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
     }
 
     public void setScreenNormal() {//TODO 这块不对呀，还需要改进，设置flag之后要设置ui，不设置ui这么写没意义呀
+        rootView.setBackgroundColor(UIUtils.getColor(R.color.color_02));
+        posterImageView.setBackgroundColor(UIUtils.getColor(R.color.color_02));
         screen = SCREEN_NORMAL;
     }
 
     public void setScreenFullscreen() {
+        rootView.setBackgroundColor(UIUtils.getColor(R.color.color_01));
+        posterImageView.setBackgroundColor(UIUtils.getColor(R.color.color_01));
         screen = SCREEN_FULLSCREEN;
     }
 

@@ -2,6 +2,8 @@ R_DEF: Internal format may change without notice
 local
 anim pop_from_bottom_anim_in
 anim pop_from_bottom_anim_out
+color color_01
+color color_02
 dimen jz_start_button_w_h_fullscreen
 dimen jz_start_button_w_h_normal
 drawable jz_add_volume
@@ -69,6 +71,7 @@ id poster
 id replay_text
 id retry_btn
 id retry_layout
+id rl_jz
 id start
 id start_layout
 id surface_container
