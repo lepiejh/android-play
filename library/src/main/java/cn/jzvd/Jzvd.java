@@ -687,7 +687,7 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
             if (CONTAINER_LIST.size() == 0) {
                 clearFloatScreen();//直接进入全屏
             } else {
-                gotoNormalCompletion();
+//                gotoNormalCompletion();
             }
         }
     }
